@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import Cover from "@/components/intro/Cover.vue";
 </script>
 
@@ -13,13 +13,13 @@ import Cover from "@/components/intro/Cover.vue";
         <Cover />
       </div>
 
-      <div class="hero__section --right" v-lazy:background-image="imgUrl">
+      <div class="hero__section --right">
       </div>
     </div>
   </div>
 </template>
 
-<script>
+<!-- <script>
 export default {
   data () {
     return {
@@ -27,7 +27,7 @@ export default {
     }
   }
 }
-</script>
+</script> -->
 
 <style scoped>
 .first {
@@ -58,6 +58,6 @@ export default {
   @apply bg-cover bg-bottom hidden;
   @apply lg:block;
 
-  /* background-image: url(@/assets/images/img_hero_cover.jpg); */
+  background-image: url(@/assets/images/img_hero_cover.jpg);
 }
 </style>

@@ -5,9 +5,6 @@ import { createPinia } from "pinia";
 
 import App from "./App.vue";
 import router from "./router";
-import VueLazyload from "vue-lazyload";
-
-Vue.use(VueLazyload);
 
 const app = createApp(App);
 

@@ -19,7 +19,7 @@
 }
 
 .cover-invitation h1 {
-  @apply text-6xl fixed top-[45%];
+  @apply text-6xl absolute top-[45%];
   @apply md:text-7xl;
 }
 

@@ -9,7 +9,7 @@ import MapView from "./views/MapView.vue";
 </script>
 
 <template>
-  <div class="page">
+  <div class="invitation">
     <IntroView />
     <QuoteView />
     <BrideView />
@@ -30,5 +30,9 @@ import MapView from "./views/MapView.vue";
 @font-face {
   font-family: Maregy;
   src: url("/src/assets/fonts/maregy.otf");
+}
+
+.invitation {
+  font-family: "Maregy";
 }
 </style>

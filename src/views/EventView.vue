@@ -24,7 +24,7 @@
   </div>
 </template>
 
-<style scoped>
+<style scoped scss>
 .event {
   @apply flex w-full h-[50vh] items-center;
   @apply border-b border-b-stone-300;
@@ -33,15 +33,16 @@
 .event__detail {
   @apply w-full flex flex-col p-4;
   @apply items-center gap-10;
-}
 
-.event__detail h2 {
-  @apply font-extrabold text-5xl text-red-800;
+  h2 {
+    @apply font-extrabold text-5xl text-red-800;
 
-  font-family: "Quentin";
+    font-family: "Quentin";
+  }
 }
 
 .event__time {
-  @apply flex flex-col gap-2 text-center;
+  @apply flex flex-col gap-2;
+  @apply text-center text-lg md:text-xl;
 }
 </style>

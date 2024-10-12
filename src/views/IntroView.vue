@@ -6,15 +6,14 @@ import Cover from "@/components/intro/Cover.vue";
   <div class="first">
     <div class="hero">
       <div class="header">
-      <h1 class="header__title">Dita & Danan</h1>
-    </div>
+        <h1 class="header__title">Dita & Danan</h1>
+      </div>
 
       <div class="hero__section">
         <Cover />
       </div>
 
-      <div class="hero__section --right">
-      </div>
+      <div class="hero__section --right"></div>
     </div>
   </div>
 </template>
@@ -44,12 +43,12 @@ import Cover from "@/components/intro/Cover.vue";
 
 .hero__section {
   @apply w-full;
-}
 
-.hero__section.--right {
-  @apply bg-cover bg-bottom hidden;
-  @apply lg:block;
+  &.--right {
+    @apply bg-cover bg-bottom hidden;
+    @apply lg:block;
 
-  background-image: url('/src/assets/images/img_hero_cover.jpg');
+    background-image: url("/src/assets/images/img_hero_cover.jpg");
+  }
 }
 </style>

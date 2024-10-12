@@ -25,7 +25,7 @@
   </div>
 </template>
 
-<style scoped>
+<style scoped scss>
 .groom {
   @apply h-screen md:h-[65vh] w-full;
   @apply flex;
@@ -34,44 +34,43 @@
 
 .groom__profile {
   @apply w-full;
-}
 
-.groom__profile.--photo {
-  @apply bg-cover bg-center;
-  @apply bg-black-overlay bg-blend-multiply md:bg-transparent;
+  &.--photo {
+    @apply bg-cover bg-center;
+    @apply bg-black-overlay bg-blend-multiply md:bg-transparent;
 
-  background-image: url("/src/assets/images/img_groom.jpg");
-}
+    background-image: url("/src/assets/images/img_groom.jpg");
+  }
 
-.groom__profile.--caption {
-  @apply hidden md:flex;
-  @apply md:flex md:flex-col md:justify-center;
-  @apply gap-8;
+  &.--caption {
+    @apply hidden md:flex;
+    @apply md:flex md:flex-col md:justify-center;
+    @apply gap-8;
+  }
 }
 
 .groom__name {
   @apply flex justify-center;
-}
 
-.groom__name span {
-  @apply font-extrabold text-3xl text-red-800;
-  @apply text-center;
+  span {
+    @apply font-extrabold text-2xl md:text-3xl text-red-800;
+    @apply text-center;
 
-  font-family: "Quentin";
+    font-family: "Quentin";
+  }
 }
 
 .groom__parents {
   @apply flex flex-col justify-center items-center;
-  @apply w-full gap-2;
+  @apply w-full gap-2 text-lg md:text-xl;
 }
 
 .groom__profile.--caption-mobile {
   @apply h-screen flex flex-col justify-end items-end;
   @apply p-8 gap-8 pb-16 md:hidden;
-}
 
-.groom__profile.--caption-mobile .groom__parents {
-  @apply text-white;
-  @apply items-end;
+  .groom__parents {
+    @apply text-white items-end;
+  }
 }
 </style>

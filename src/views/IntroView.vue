@@ -13,25 +13,16 @@ import Cover from "@/components/intro/Cover.vue";
         <Cover />
       </div>
 
-      <div class="hero__section --right">
+      <div class="hero__section --right" v-lazy:background-image="'/src/assets/images/img_hero_cover.jpg'">
       </div>
     </div>
   </div>
 </template>
 
-<!-- <script>
-export default {
-  data () {
-    return {
-      imgUrl: '@/assets/images/img_hero_cover.jpg'
-    }
-  }
-}
-</script> -->
-
 <style scoped>
 .first {
   @apply h-screen flex flex-col;
+  @apply border-b border-b-stone-300;
 }
 
 .header {
@@ -58,6 +49,6 @@ export default {
   @apply bg-cover bg-bottom hidden;
   @apply lg:block;
 
-  background-image: url(@/assets/images/img_hero_cover.jpg);
+  /* background-image: url(@/assets/images/img_hero_cover.jpg); */
 }
 </style>

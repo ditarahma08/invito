@@ -1,7 +1,7 @@
 <template>
   <div class="cover-invitation">
     <h1>29 . 01 . 2025</h1>
-    <img src="@/assets/images/img_hero_featured.jpg" />
+    <img v-lazy="'/src/assets/images/img_hero_featured.jpg'" />
 
     <div class="cover-invitation__recipient">
       <span>Dear Guest</span>

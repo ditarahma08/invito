@@ -3,7 +3,7 @@
     <div class="bride__profile --photo" v-lazy:background-image="'/src/assets/images/img_bride.jpg'"></div>
     <div class="bride__profile --caption">
       <div class="bride__name">
-        <div>Dita Rahma Puspitasari</div>
+        <span>Dita Rahma Puspitasari</span>
       </div>
       <div class="bride__parents">
         <span>Putri Dari</span>
@@ -16,8 +16,9 @@
 
 <style scoped>
 .bride {
-  @apply h-[75vh] w-full;
+  @apply h-[65vh] w-full;
   @apply flex;
+  @apply border-t border-t-stone-300;
 }
 
 .bride__profile {
@@ -29,19 +30,23 @@
 }
 
 .bride__profile.--caption {
-  @apply flex;
+  @apply flex flex-col justify-center;
+  @apply gap-8;
 }
 
 .bride__name {
-    @apply flex justify-center items-center;
-
+    @apply flex justify-center;
 }
 
-.bride__name div {
-  @apply -rotate-90 w-max;
+.bride__name span {
+  @apply font-extrabold text-3xl text-red-800;
+  @apply text-center;
+
+  font-family: "Quentin";
 }
 
 .bride__parents {
-  @apply flex flex-col justify-center items-center w-full;
+  @apply flex flex-col justify-center items-center;
+  @apply w-full gap-2;
 }
 </style>

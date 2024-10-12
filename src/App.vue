@@ -7,17 +7,24 @@ import GroomView from "./views/GroomView.vue";
 </script>
 
 <template>
-  <IntroView />
-  <QuoteView />
-  <BrideView />
-  <GroomView />
+  <div class="page">
+    <IntroView />
+    <QuoteView />
+    <BrideView />
+    <GroomView />
+  </div>
 
   <!-- <RouterView /> -->
 </template>
 
 <style scoped>
 @font-face {
-  font-family: Lora;
-  src: url("~@/assets/fonts/lora-medium.ttf");
+  font-family: Quentin;
+  src: url("/src/assets/fonts/quentin.otf");
+}
+
+@font-face {
+  font-family: Maregy;
+  src: url("/src/assets/fonts/maregy.otf");
 }
 </style>

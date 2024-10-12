@@ -9,8 +9,6 @@
 .quote {
     @apply flex flex-col items-center justify-center;
     @apply text-center gap-4 my-36;
-
-    font-family: "Lora";
 }
 
 .quote p {

@@ -14,13 +14,14 @@
 .cover-invitation {
   @apply relative;
   @apply h-full flex flex-col items-center justify-items-center;
-
-  font-family: "Lora";
 }
 
 .cover-invitation h1 {
   @apply text-6xl absolute top-[45%];
   @apply md:text-7xl;
+  @apply text-red-800 font-extrabold;
+
+  font-family: "Quentin";
 }
 
 .cover-invitation img {

@@ -32,9 +32,10 @@ import Cover from "@/components/intro/Cover.vue";
 }
 
 .header__title {
-  @apply text-3xl font-bold;
+  @apply text-4xl font-extrabold;
+  @apply text-red-800;
 
-  font-family: "Lora";
+  font-family: "Quentin";
 }
 
 .hero {
@@ -48,7 +49,5 @@ import Cover from "@/components/intro/Cover.vue";
 .hero__section.--right {
   @apply bg-cover bg-bottom hidden;
   @apply lg:block;
-
-  /* background-image: url(@/assets/images/img_hero_cover.jpg); */
 }
 </style>

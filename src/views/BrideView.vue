@@ -1,9 +1,7 @@
 <template>
   <div class="bride">
     <div
-      class="bride__profile --photo"
-      v-lazy:background-image="'/src/assets/images/img_bride.jpg'"
-    >
+      class="bride__profile --photo">
       <div class="bride__profile --caption-mobile">
         <div class="bride__name">
           <span>Dita Rahma Puspitasari</span>
@@ -44,6 +42,8 @@
 .bride__profile.--photo {
   @apply bg-cover bg-center;
   @apply bg-black-overlay bg-blend-multiply md:bg-transparent;
+
+  background-image: url('/src/assets/images/img_bride.jpg');
 }
 
 .bride__profile.--caption {

@@ -13,7 +13,7 @@ import Cover from "@/components/intro/Cover.vue";
         <Cover />
       </div>
 
-      <div class="hero__section --right" v-lazy:background-image="'/src/assets/images/img_hero_cover.jpg'">
+      <div class="hero__section --right">
       </div>
     </div>
   </div>
@@ -49,5 +49,7 @@ import Cover from "@/components/intro/Cover.vue";
 .hero__section.--right {
   @apply bg-cover bg-bottom hidden;
   @apply lg:block;
+
+  background-image: url('/src/assets/images/img_hero_cover.jpg');
 }
 </style>

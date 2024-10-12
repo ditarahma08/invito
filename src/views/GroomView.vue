@@ -10,10 +10,7 @@
         <span>Ibu Sri Agustin Widiastuti</span>
       </div>
     </div>
-    <div
-      class="groom__profile --photo"
-      v-lazy:background-image="'/src/assets/images/img_groom.jpg'"
-    >
+    <div class="groom__profile --photo">
       <div class="groom__profile --caption-mobile">
         <div class="groom__name">
           <span>Putra Danan Joyo</span>
@@ -30,9 +27,9 @@
 
 <style scoped>
 .groom {
-    @apply h-screen md:h-[65vh] w-full;
+  @apply h-screen md:h-[65vh] w-full;
   @apply flex;
-  @apply border-t border-t-stone-300;
+  @apply border-b border-b-stone-300;
 }
 
 .groom__profile {
@@ -43,6 +40,7 @@
   @apply bg-cover bg-center;
   @apply bg-black-overlay bg-blend-multiply md:bg-transparent;
 
+  background-image: url("/src/assets/images/img_groom.jpg");
 }
 
 .groom__profile.--caption {
@@ -68,12 +66,12 @@
 }
 
 .groom__profile.--caption-mobile {
-    @apply h-screen flex flex-col justify-end items-end; 
-    @apply p-8 gap-8 pb-16 md:hidden;
+  @apply h-screen flex flex-col justify-end items-end;
+  @apply p-8 gap-8 pb-16 md:hidden;
 }
 
 .groom__profile.--caption-mobile .groom__parents {
-    @apply text-white;
-    @apply items-end;
+  @apply text-white;
+  @apply items-end;
 }
 </style>

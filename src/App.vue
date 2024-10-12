@@ -4,6 +4,8 @@ import IntroView from "./views/IntroView.vue";
 import QuoteView from "./views/QuoteView.vue";
 import BrideView from "./views/BrideView.vue";
 import GroomView from "./views/GroomView.vue";
+import EventView from "./views/EventView.vue";
+import MapView from "./views/MapView.vue";
 </script>
 
 <template>
@@ -12,6 +14,8 @@ import GroomView from "./views/GroomView.vue";
     <QuoteView />
     <BrideView />
     <GroomView />
+    <EventView />
+    <MapView />
   </div>
 
   <!-- <RouterView /> -->

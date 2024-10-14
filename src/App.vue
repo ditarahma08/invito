@@ -7,6 +7,7 @@ import EventView from "./views/EventView.vue";
 import MapView from "./views/MapView.vue";
 import CoverView from "./views/CoverView.vue";
 import IntroView from "./views/IntroView.vue";
+import ProfileView from "./ProfileView.vue";
 </script>
 
 <template>
@@ -14,10 +15,11 @@ import IntroView from "./views/IntroView.vue";
     <CoverView />
     <!-- <QuoteView /> -->
      <IntroView/>
-    <BrideView />
-    <GroomView />
+     <ProfileView/>
+    <!-- <BrideView />
+    <GroomView /> -->
     <EventView />
-    <MapView />
+    <!-- <MapView /> -->
   </div>
 
   <!-- <RouterView /> -->

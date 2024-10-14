@@ -21,6 +21,19 @@
         <span>Miri, Timbulharjo, Sewon, Bantul, DI Yogyakarta</span>
       </div>
     </div>
+
+    <div class="event__map">
+      <iframe
+        height="100%"
+        width="100%"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAi2KodOLx-Hi9qqXOeHPvSskIvKXKI9IU
+    &q=Waroeng+Omah+Sawah"
+      >
+      </iframe>
+    </div>
   </div>
 </template>
 
@@ -31,7 +44,7 @@
 }
 
 .event__detail {
-  @apply w-full flex flex-col p-4;
+  @apply w-full flex flex-col;
   @apply items-center gap-10;
 
   h2 {
@@ -44,5 +57,9 @@
 .event__time {
   @apply flex flex-col gap-2;
   @apply text-center text-lg md:text-xl;
+}
+
+.event__map {
+  @apply w-full h-full;
 }
 </style>

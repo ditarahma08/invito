@@ -36,13 +36,13 @@ export default {
 
 .cover-invitation img {
   @apply overflow-hidden object-cover;
-  @apply h-[420px] w-[295px];
+  @apply h-[420px] w-[295px] md:h-[525px] md:w-[350px];
   @apply mt-auto mb-auto;
 }
 
 .cover-invitation__recipient {
   @apply absolute flex flex-col items-center gap-2;
-  @apply text-lg;
+  @apply text-xl;
 
   bottom: calc(50% - 325px);
 }

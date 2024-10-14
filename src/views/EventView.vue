@@ -39,7 +39,7 @@
 
 <style scoped scss>
 .event {
-  @apply flex w-full h-[50vh] items-center;
+  @apply flex w-full h-screen md:h-[50vh] items-center;
   @apply flex-col md:flex-row;
   @apply border-b border-b-stone-300;
 }

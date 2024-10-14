@@ -1,54 +1,53 @@
-<script setup>
-import Cover from "@/components/intro/Cover.vue";
-</script>
-
 <template>
-  <div class="first">
-    <div class="hero">
-      <div class="header">
-        <h1 class="header__title">Dita & Danan</h1>
-      </div>
-
-      <div class="hero__section">
-        <Cover />
-      </div>
-
-      <div class="hero__section --right"></div>
+  <div class="intro">
+    <div class="intro__title">
+      <p>You're invited to our wedding!</p>
+    </div>
+    <div class="intro__name">
+      <p>Dita</p>
+      <p>Danan</p>
+    </div>
+    <div class="intro__date">
+      <p>Saturday, 29.01.2025</p>
     </div>
   </div>
 </template>
 
-<style scoped>
-.first {
-  @apply h-screen flex flex-col;
-  @apply border-b border-b-stone-300;
-}
-
-.header {
-  @apply absolute w-full;
-  @apply flex justify-center items-center;
-  @apply p-6;
-}
-
-.header__title {
-  @apply text-4xl font-extrabold;
-  @apply text-red-800;
-
-  font-family: "Quentin";
-}
-
-.hero {
-  @apply flex w-full h-full;
-}
-
-.hero__section {
-  @apply w-full;
-
-  &.--right {
-    @apply bg-cover bg-bottom hidden;
-    @apply lg:block;
-
-    background-image: url("/src/assets/images/img_hero_cover.jpg");
+<style scoped scss>
+@keyframes background-scroll {
+  from {
+    background-position: 0 0;
   }
+
+  to {
+    background-position: -100vw 0;
+  }
+}
+
+.intro {
+  @apply h-screen w-full bg-repeat-x bg-cover;
+  @apply bg-black-overlay bg-blend-multiply;
+  @apply flex flex-col items-center justify-center;;
+
+  background-image: url("/src/assets/images/img_gallery.png");
+  animation: background-scroll 5s linear infinite;
+}
+
+.intro__title {
+    @apply text-white text-4xl md:text-5xl text-center mb-36;
+    @apply mb-28 md:mb-36;
+
+    font-family: "Quentin";
+}
+
+.intro__name {
+    @apply text-red-800 font-extrabold mb-16;
+    @apply text-8xl md:text-9xl text-center;
+
+    font-family: "Quentin";
+}
+
+.intro__date {
+    @apply text-white text-4xl font-extrabold;
 }
 </style>

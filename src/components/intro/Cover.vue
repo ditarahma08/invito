@@ -4,11 +4,21 @@
     <img src="/src/assets/images/img_hero_featured.jpg" loading="lazy" />
 
     <div class="cover-invitation__recipient">
-      <span>Dear Guest</span>
-      <button type="button">Open Invitation</button>
+      <span>Dear {{ recipient || 'Guest' }}</span>
+      <!-- <button type="button">Open Invitation</button> -->
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    recipient() {
+      return this.$route.query.to
+    }
+  }
+}
+</script>
 
 <style scoped>
 .cover-invitation {
@@ -37,11 +47,11 @@
   bottom: calc(50% - 325px);
 }
 
-.cover-invitation__recipient button {
+/* .cover-invitation__recipient button {
   @apply py-2 px-4 rounded-lg;
   @apply hover:shadow-md;
 
   color: var(--color-background-soft);
   background-color: var(--color-text);
-}
+} */
 </style>

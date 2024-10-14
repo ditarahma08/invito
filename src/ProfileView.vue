@@ -84,7 +84,7 @@ export default {
   @apply text-center relative w-full;
 
   span {
-    @apply text-red-800 font-extrabold text-3xl md:text-4xl;
+    @apply text-red-800 font-extrabold text-2xl md:text-4xl;
     @apply absolute -top-16;
 
     font-family: "Quentin";

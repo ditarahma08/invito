@@ -40,11 +40,12 @@
 <style scoped scss>
 .event {
   @apply flex w-full h-[50vh] items-center;
+  @apply flex-col md:flex-row;
   @apply border-b border-b-stone-300;
 }
 
 .event__detail {
-  @apply w-full flex flex-col;
+  @apply w-full flex flex-col p-16 md:p-8;
   @apply items-center gap-10;
 
   h2 {

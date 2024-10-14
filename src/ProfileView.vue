@@ -7,12 +7,7 @@
     />
 
     <div v-if="show == 'bride'" class="profile__person">
-      <div
-        class="profile__picture"
-        style="
-          background-image: url(&quot;/src/assets/images/img_bride.jpg&quot;);
-        "
-      ></div>
+      <div class="profile__picture --bride"></div>
       <div class="profile__caption">
         <span>Dita Rahma Puspitasari</span>
 
@@ -23,12 +18,7 @@
     </div>
 
     <div v-if="show == 'groom'" class="profile__person">
-      <div
-        class="profile__picture"
-        style="
-          background-image: url(&quot;/src/assets/images/img_groom.jpg&quot;);
-        "
-      ></div>
+      <div class="profile__picture --groom"></div>
       <div class="profile__caption">
         <span>Putra Danan Joyo</span>
 
@@ -79,6 +69,14 @@ export default {
   @apply bg-cover mx-4;
 
   background-position-y: 50%;
+
+  &.--bride {
+    background-image: url("/src/assets/images/img_bride.jpg");
+  }
+
+  &.--groom {
+    background-image: url("/src/assets/images/img_groom.jpg");
+  }
 }
 
 .profile__caption {

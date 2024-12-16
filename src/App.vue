@@ -8,18 +8,22 @@ import MapView from "./views/MapView.vue";
 import CoverView from "./views/CoverView.vue";
 import IntroView from "./views/IntroView.vue";
 import ProfileView from "./ProfileView.vue";
+import CommentView from "./views/CommentView.vue";
+import FooterView from "./views/FooterView.vue";
 </script>
 
 <template>
   <div class="invitation">
     <CoverView />
     <!-- <QuoteView /> -->
-     <IntroView/>
-     <ProfileView/>
+     <!-- <IntroView/> -->
+     <!-- <ProfileView/> -->
     <!-- <BrideView />
     <GroomView /> -->
-    <EventView />
+    <!-- <EventView /> -->
     <!-- <MapView /> -->
+    <CommentView />
+    <FooterView />
   </div>
 
   <!-- <RouterView /> -->

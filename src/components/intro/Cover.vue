@@ -1,8 +1,7 @@
 <template>
   <div class="cover-invitation">
     <h1>29 . 01 . 2025</h1>
-    <img src="/src/assets/images/img_hero_featured.jpg" loading="lazy" />
-
+    <img src="/src/assets/images/carousel.gif" loading="lazy" />
     <div class="cover-invitation__recipient">
       <span>Dear {{ recipient || 'Guest' }}</span>
       <!-- <button type="button">Open Invitation</button> -->
@@ -28,7 +27,7 @@ export default {
 
 .cover-invitation h1 {
   @apply text-6xl absolute top-[45%];
-  @apply md:text-7xl;
+  @apply md:text-8xl;
   @apply text-red-800 font-extrabold;
 
   font-family: "Quentin";
@@ -38,6 +37,7 @@ export default {
   @apply overflow-hidden object-cover;
   @apply h-[420px] w-[295px] md:h-[525px] md:w-[350px];
   @apply mt-auto mb-auto;
+  @apply rounded-lg;
 }
 
 .cover-invitation__recipient {

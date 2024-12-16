@@ -31,8 +31,9 @@ import Cover from "@/components/intro/Cover.vue";
 }
 
 .header__title {
-  @apply text-4xl font-extrabold;
+  @apply text-xl font-extrabold;
   @apply text-red-800;
+  @apply top-40;
 
   font-family: "Quentin";
 }

@@ -16,11 +16,11 @@ import FooterView from "./views/FooterView.vue";
   <div class="invitation">
     <CoverView />
     <!-- <QuoteView /> -->
-     <!-- <IntroView/> -->
-     <!-- <ProfileView/> -->
+    <IntroView />
+    <!-- <ProfileView /> -->
     <!-- <BrideView />
     <GroomView /> -->
-    <!-- <EventView /> -->
+    <EventView />
     <!-- <MapView /> -->
     <CommentView />
     <FooterView />
@@ -40,7 +40,12 @@ import FooterView from "./views/FooterView.vue";
   src: url("/src/assets/fonts/maregy.otf");
 }
 
+@font-face {
+  font-family: Montserrat;
+  src: url("/src/assets/fonts/montserrat.ttf");
+}
+
 .invitation {
-  font-family: "Maregy";
+  font-family: "Montserrat";
 }
 </style>

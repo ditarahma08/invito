@@ -3,7 +3,7 @@
     <h1>29 . 01 . 2025</h1>
     <img src="/src/assets/images/carousel.gif" loading="lazy" />
     <div class="cover-invitation__recipient">
-      <span>Dear {{ recipient || 'Guest' }}</span>
+      <span>Dear {{ recipient || "Guest" }}</span>
       <!-- <button type="button">Open Invitation</button> -->
     </div>
   </div>
@@ -13,10 +13,10 @@
 export default {
   computed: {
     recipient() {
-      return this.$route.query.to
-    }
-  }
-}
+      return this.$route.query.to;
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -45,6 +45,10 @@ export default {
   @apply text-xl;
 
   bottom: calc(50% - 325px);
+
+  @media (max-width: 375px) {
+    bottom: 10%;
+  }
 }
 
 /* .cover-invitation__recipient button {

@@ -27,27 +27,27 @@
 .intro {
   @apply h-screen w-full bg-repeat-x bg-cover;
   @apply bg-black-overlay bg-blend-multiply;
-  @apply flex flex-col items-center justify-center;;
+  @apply flex flex-col items-center justify-center;
 
-  background-image: url("/src/assets/images/img_gallery.png");
+  background-image: url("/src/assets/images/img_gallery_2.png");
   animation: background-scroll 5s linear infinite;
 }
 
 .intro__title {
-    @apply text-white text-4xl md:text-5xl text-center mb-36;
-    @apply mb-28 md:mb-36;
+  @apply text-white text-4xl md:text-5xl text-center mb-36;
+  @apply mb-28 md:mb-36;
 
-    font-family: "Quentin";
+  font-family: "Quentin";
 }
 
 .intro__name {
-    @apply text-red-800 font-extrabold mb-16;
-    @apply text-8xl md:text-9xl text-center;
+  @apply text-red-800 font-extrabold mb-16;
+  @apply text-8xl md:text-9xl text-center;
 
-    font-family: "Quentin";
+  font-family: "Quentin";
 }
 
 .intro__date {
-    @apply text-white text-4xl font-extrabold;
+  @apply text-white text-4xl font-extrabold;
 }
 </style>

@@ -16,7 +16,7 @@
 
       <div class="event__time">
         <span>Rabu, 29 Januari 2025</span>
-        <span>11.30 - 13.30 WIB</span>
+        <span>12.30 - 13.30 WIB</span>
         <span>Waroeng Omah Sawah</span>
         <span>Miri, Timbulharjo, Sewon, Bantul, DI Yogyakarta</span>
       </div>

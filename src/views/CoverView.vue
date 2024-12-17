@@ -31,7 +31,7 @@ import Cover from "@/components/intro/Cover.vue";
 }
 
 .header__title {
-  @apply text-xl font-extrabold;
+  @apply text-3xl font-extrabold;
   @apply text-red-800;
   @apply top-40;
 

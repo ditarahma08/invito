@@ -1,28 +1,26 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
-import QuoteView from "./views/QuoteView.vue";
 import BrideView from "./views/BrideView.vue";
 import GroomView from "./views/GroomView.vue";
 import EventView from "./views/EventView.vue";
-import MapView from "./views/MapView.vue";
 import CoverView from "./views/CoverView.vue";
 import IntroView from "./views/IntroView.vue";
 import ProfileView from "./ProfileView.vue";
 import CommentView from "./views/CommentView.vue";
+import GiftView from "./views/GiftView.vue";
 import FooterView from "./views/FooterView.vue";
 </script>
 
 <template>
   <div class="invitation">
     <CoverView />
-    <!-- <QuoteView /> -->
     <IntroView />
     <!-- <ProfileView /> -->
     <!-- <BrideView />
     <GroomView /> -->
     <EventView />
-    <!-- <MapView /> -->
     <CommentView />
+    <GiftView />
     <FooterView />
   </div>
 

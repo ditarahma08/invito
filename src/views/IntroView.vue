@@ -8,7 +8,7 @@
       <p>Danan</p>
     </div>
     <div class="intro__date">
-      <p>Saturday, 29.01.2025</p>
+      <p>Wednesday, 29.01.2025</p>
     </div>
   </div>
 </template>

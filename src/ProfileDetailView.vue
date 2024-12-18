@@ -8,8 +8,8 @@
 
         <div class="profile__name --parent">
           <span>Putra </span>
-          <span>Bp. Bambang Prijadi & <br /></span>
-          <span>Ibu Sri Agustin Widiastuti</span>
+          <span>Bp. Bambang Prijadi (Alm) <br /></span>
+          <span>& Ibu Sri Agustin Widiastuti</span>
         </div>
       </div>
 
@@ -56,7 +56,7 @@
   }
 
   &.--parent {
-    @apply text-[10px] md:text-sm mt-5;
+    @apply text-[9px] md:text-sm mt-5;
   }
 }
 </style>

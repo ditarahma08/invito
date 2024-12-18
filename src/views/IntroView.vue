@@ -24,13 +24,27 @@
   }
 }
 
+@keyframes background-scroll-mobile {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -830px 0;
+  }
+}
+
 .intro {
   @apply h-screen w-full bg-repeat-x bg-cover;
   @apply bg-black-overlay bg-blend-multiply;
   @apply flex flex-col items-center justify-center;
 
   background-image: url("/src/assets/images/img_gallery_2.png");
-  animation: background-scroll 5s linear infinite;
+  animation: background-scroll 6s linear infinite;
+
+  @media (max-width: 375px) {
+    animation: background-scroll-mobile 6s linear infinite;
+  }
 }
 
 .intro__title {

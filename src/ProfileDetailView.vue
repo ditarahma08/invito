@@ -38,6 +38,7 @@
   @apply rounded-lg px-2 py-10 md:px-3;
   @apply flex justify-between;
   @apply bg-cover bg-center bg-no-repeat;
+  @apply shadow-2xl;
 
   background-image: url("/src/assets/images/img_profile_cropped.jpg");
 }

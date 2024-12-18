@@ -45,7 +45,7 @@
 }
 
 .event__detail {
-  @apply w-full flex flex-col p-16 md:p-8;
+  @apply w-full flex flex-col p-12 md:p-8;
   @apply items-center gap-10;
 
   h2 {

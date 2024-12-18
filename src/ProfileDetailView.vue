@@ -31,6 +31,7 @@
 <style scss scoped>
 .profile {
   @apply h-screen p-6 md:p-16 flex justify-center;
+  @apply border-b border-b-stone-300;
 }
 
 .profile__image {

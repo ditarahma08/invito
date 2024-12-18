@@ -1,6 +1,6 @@
 <template>
   <div class="gift">
-    <h2>We're happy to receive your gift here:</h2>
+    <h2>We're happy to receive your gift</h2>
 
     <div class="gift__address">
       <span>BCA 0374202941 a/n Dita Rahma Puspitasari</span>
@@ -13,10 +13,17 @@
 
 <style scoped scss>
 .gift {
-  @apply flex w-full h-[50vh] flex-col justify-center items-center;
+  @apply w-full h-[50vh] px-4;
+  @apply flex flex-col justify-center items-center;
 
-  &__address {
-    @apply flex flex-col;
+  h2 {
+    @apply text-red-800 text-3xl md:text-5xl text-center;
+
+    font-family: "Quentin";
   }
+}
+
+.gift__address {
+  @apply flex flex-col gap-3 text-center m-10;
 }
 </style>

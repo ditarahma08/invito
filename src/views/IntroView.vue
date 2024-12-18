@@ -42,12 +42,12 @@
 
 .intro__name {
   @apply text-red-800 font-extrabold mb-16;
-  @apply text-8xl md:text-9xl text-center;
+  @apply text-7xl md:text-9xl text-center;
 
   font-family: "Quentin";
 }
 
 .intro__date {
-  @apply text-white text-4xl font-extrabold;
+  @apply text-white text-2xl md:text-4xl font-extrabold text-center;
 }
 </style>

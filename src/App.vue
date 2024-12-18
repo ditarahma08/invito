@@ -5,7 +5,7 @@ import GroomView from "./views/GroomView.vue";
 import EventView from "./views/EventView.vue";
 import CoverView from "./views/CoverView.vue";
 import IntroView from "./views/IntroView.vue";
-import ProfileView from "./ProfileView.vue";
+import ProfileView from "./ProfileDetailView.vue";
 import CommentView from "./views/CommentView.vue";
 import GiftView from "./views/GiftView.vue";
 import FooterView from "./views/FooterView.vue";
@@ -15,9 +15,7 @@ import FooterView from "./views/FooterView.vue";
   <div class="invitation">
     <CoverView />
     <IntroView />
-    <!-- <ProfileView /> -->
-    <!-- <BrideView />
-    <GroomView /> -->
+    <ProfileView />
     <EventView />
     <CommentView />
     <GiftView />

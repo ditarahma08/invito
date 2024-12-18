@@ -26,8 +26,8 @@ export default {
 }
 
 .cover-invitation h1 {
-  @apply text-6xl absolute top-[45%];
-  @apply md:text-8xl;
+  @apply text-center absolute top-[45%];
+  @apply text-6xl md:text-8xl;
   @apply text-red-800 font-extrabold;
 
   font-family: "Quentin";

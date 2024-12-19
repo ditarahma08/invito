@@ -20,6 +20,15 @@ export default {
 </script>
 
 <style scoped>
+@keyframes keyframes {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 .cover-invitation {
   @apply relative;
   @apply h-full flex flex-col items-center justify-items-center;
@@ -29,8 +38,10 @@ export default {
   @apply text-center absolute top-[45%];
   @apply text-[54px] md:text-8xl;
   @apply text-red-800 font-extrabold;
+  @apply overflow-hidden whitespace-nowrap w-full;
 
   font-family: "Quentin";
+  animation: keyframes 3s steps(500);
 }
 
 .cover-invitation img {

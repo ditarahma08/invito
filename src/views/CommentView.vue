@@ -10,6 +10,7 @@
                 name: "",
                 company: "",
             },
+            wishSubmitted: false,
             wishesList: []
         }
     },
@@ -27,22 +28,30 @@
             }
         },
         async submitForm() {
-            try {
+            if (this.wishSubmitted) {
+                alert("Kirim sekali saja ya kak :)");
+                return;
+            } else {
+                try {
                 await addDoc(collection(db, "comments"), {
                     wishes: this.form.wishes,
                     name: this.form.name,
                     company: this.form.company,
                     timestamp: new Date()
                 });
+                this.wishSubmitted = true;
                 this.fetchWishesList();
-                alert("Comment submitted successfully!");
-                this.form.wishes = "";
-                this.form.name = "";
-                this.form.company = "";
+                this.resetForm();
             } catch (e) {
                 console.error("Error adding document: ", e);
                 alert("Error submitting comment. Please try again.");
             }
+            }
+        },
+        resetForm() {
+            this.form.wishes = "";
+            this.form.name = "";
+            this.form.company = "";
         }
     },
 }

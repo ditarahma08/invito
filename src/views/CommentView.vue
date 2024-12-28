@@ -1,26 +1,48 @@
 <script>
-export default {
-    data() {
+    import { db } from "@/firebase";
+    import { collection, addDoc, orderBy, onSnapshot } from "firebase/firestore";
+
+    export default {
+    data:() => {
         return {
-        form: {
-            wishes: "",
-            name: "",
-            company: "",
-        },
-        currentPage: 1,
-        totalPages: 3,
-        };
+            form: {
+                wishes: "",
+                name: "",
+                company: "",
+            },
+            wishesList: []
+        }
+    },
+    created() {
+        this.fetchWishesList();
     },
     methods: {
-        submitForm() {
-        console.log(this.form);
+        async fetchWishesList() {
+            try {
+                const querySnapshot = await getDocs(collection(db, "comments"));
+                this.wishesList = querySnapshot.docs.map(doc => doc.data());
+                console.log("Fetched list:", this.wishesList)       
+            } catch (e) {
+                console.error("Error fetching comments: ", e);
+            }
         },
-        nextPage() {
-        this.currentPage++;
-        },
-        prevPage() {
-        this.currentPage--;
-        },
+        async submitForm() {
+            try {
+                await addDoc(collection(db, "comments"), {
+                    wishes: this.form.wishes,
+                    name: this.form.name,
+                    company: this.form.company,
+                    timestamp: new Date()
+                });
+                alert("Comment submitted successfully!");
+                this.form.wishes = "";
+                this.form.name = "";
+                this.form.company = "";
+            } catch (e) {
+                console.error("Error adding document: ", e);
+                alert("Error submitting comment. Please try again.");
+            }
+        }
     },
 }
 </script>
@@ -41,11 +63,11 @@ export default {
                             <input type="text" id="name" v-model="form.name" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm  sm:text-sm">
                         </div>
                         <div class="mb-4">
-                            <label for="company" class="block text-sm font-medium text-gray-700">Company</label>
+                            <label for="company" class="block text-sm font-medium text-gray-700">From</label>
                             <input type="text" id="company" v-model="form.company" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm  sm:text-sm">
                         </div>
                         <div class="flex justify-end">
-                            <button type="submit" class="px-4 py-2 bg-red-800 text-white rounded-md hover:bg-red-800">Submit</button>
+                            <button type="submit" :disabled="!form.wishes || !form.name || !form.company" class="px-4 py-2 bg-red-800 text-white rounded-md hover:bg-red-800" :class="{'opacity-50 cursor-not-allowed': !form.wishes || !form.name || !form.company}">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -54,12 +76,12 @@ export default {
             <div class="flex">
                 <div class="grid grid-cols-1 gap-6">
                     <div class="flex space-x-6 overflow-x-auto">
-                        <div class="bg-white p-6 rounded-lg shadow-lg flex-none w-80" v-for="index in 15" :key="index">
-                            <p class="text-gray-700 mb-4">"This is the best service I have ever used. Highly recommend to everyone!"</p>
+                        <div class="bg-white p-6 rounded-lg shadow-lg flex-none w-80" v-for="(wish, index) in wishesList" :key="index">
+                            <p class="text-gray-700 mb-4">{{ wish.wishes }}</p>
                             <div class="flex items-center">
                                 <div>
-                                    <p class="text-red-800 font-bold">John Doe</p>
-                                    <p class="text-gray-600">CEO, Company</p>
+                                    <p class="text-red-800 font-bold">{{ wish.name }}</p>
+                                    <p class="text-gray-600">{{ wish.company }}</p>
                                 </div>
                             </div>
                         </div>

@@ -1,6 +1,6 @@
 <script>
     import { db } from "@/firebase";
-    import { collection, addDoc, orderBy, onSnapshot } from "firebase/firestore";
+    import { collection, addDoc, orderBy, onSnapshot, getDocs } from "firebase/firestore";
 
     export default {
     data:() => {

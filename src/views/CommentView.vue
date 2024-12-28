@@ -1,6 +1,6 @@
 <script>
     import { db } from "@/firebase";
-    import { collection, addDoc, orderBy, onSnapshot, getDocs } from "firebase/firestore";
+    import { query, collection, addDoc, orderBy, getDocs } from "firebase/firestore";
 
     export default {
     data:() => {
@@ -19,7 +19,7 @@
     methods: {
         async fetchWishesList() {
             try {
-                const querySnapshot = await getDocs(collection(db, "comments"));
+                const querySnapshot = await getDocs(query(collection(db, "comments"), orderBy("timestamp", "desc")));
                 this.wishesList = querySnapshot.docs.map(doc => doc.data());
                 console.log("Fetched list:", this.wishesList)       
             } catch (e) {
@@ -34,6 +34,7 @@
                     company: this.form.company,
                     timestamp: new Date()
                 });
+                this.fetchWishesList();
                 alert("Comment submitted successfully!");
                 this.form.wishes = "";
                 this.form.name = "";

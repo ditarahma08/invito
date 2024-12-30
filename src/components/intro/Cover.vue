@@ -3,7 +3,8 @@
     <h1>29 . 01 . 2025</h1>
     <img src="/src/assets/images/carousel.gif" loading="lazy" />
     <div class="cover-invitation__recipient">
-      <span>Dear {{ recipient || "Guest" }}</span>
+      <span>Dear</span>
+      <span class="cover-invitation__recipient--name">{{ recipient || "Guest" }}</span>
       <!-- <button type="button">Open Invitation</button> -->
     </div>
   </div>
@@ -19,7 +20,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped scss>
 @keyframes keyframes {
   from {
     width: 0%;
@@ -46,20 +47,25 @@ export default {
 
 .cover-invitation img {
   @apply overflow-hidden object-cover;
-  @apply h-[420px] w-[295px] md:h-[525px] md:w-[350px];
+  @apply h-[394px] w-[295px] md:h-[481px] md:w-[360px];
   @apply mt-auto mb-auto;
   @apply rounded-lg;
 }
 
 .cover-invitation__recipient {
   @apply absolute flex flex-col items-center gap-2;
-  @apply text-xl;
+  /* @apply text-sm; */
 
-  bottom: calc(50% - 325px);
+  bottom: calc(50% - 375px);
 
   @media (max-width: 375px) {
     bottom: 10%;
   }
+}
+
+.cover-invitation__recipient--name {
+  @apply text-2xl;
+  font-family: "Quentin";
 }
 
 /* .cover-invitation__recipient button {

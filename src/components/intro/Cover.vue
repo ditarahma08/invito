@@ -56,10 +56,10 @@ export default {
   @apply absolute flex flex-col items-center gap-2;
   /* @apply text-sm; */
 
-  bottom: calc(50% - 375px);
+  bottom: 100px;
 
   @media (max-width: 375px) {
-    bottom: 10%;
+    bottom: 75px;
   }
 }
 

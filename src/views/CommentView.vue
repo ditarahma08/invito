@@ -86,7 +86,7 @@
             <div class="flex">
                 <div class="grid grid-cols-1 gap-6">
                     <div class="flex space-x-6 overflow-x-auto">
-                        <div class="bg-white p-6 rounded-lg shadow-lg flex-none w-80" v-for="(wish, index) in wishesList" :key="index">
+                        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between w-80" v-for="(wish, index) in wishesList" :key="index">
                             <p class="text-gray-700 mb-4">{{ wish.wishes }}</p>
                             <div class="flex items-center">
                                 <div>

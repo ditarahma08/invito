@@ -66,8 +66,13 @@ export default {
 </script>
 
 <template>
-  <section class="py-16 px-4 md:px-12 border-b border-b-stone-300">
+  <section class="py-6 md:py-16 px-4 md:px-12 border-b border-b-stone-300">
     <!-- start greetings -->
+
+    <div class="mb-8">
+      <h2 class="text-red-800 text-3xl md:text-5xl text-center" style="font-family: 'Quentin'">Leave us some wishes!</h2>
+    </div>
+
     <div class="flex flex-col">
       <div class="flex-4">
         <div class="flex justify-center items-center mb-10">

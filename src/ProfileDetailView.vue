@@ -1,5 +1,9 @@
 <template>
   <div class="profile">
+    <div class="profile__title">
+      <h2>We're getting married!</h2>
+    </div>
+
     <div class="profile__image">
       <div class="profile__name">
         <div class="profile__name --groom">
@@ -32,6 +36,17 @@
 .profile {
   @apply h-screen p-6 md:p-16 flex justify-center;
   @apply border-b border-b-stone-300;
+  @apply flex flex-col items-center;
+}
+
+.profile__title {
+  @apply mb-8;
+
+  h2 {
+    @apply text-red-800 text-3xl md:text-5xl text-center;
+
+    font-family: "Quentin";
+  }
 }
 
 .profile__image {

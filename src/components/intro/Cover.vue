@@ -64,7 +64,7 @@ export default {
 }
 
 .cover-invitation__recipient--name {
-  @apply text-2xl;
+  @apply text-2xl md:text-3xl;
   font-family: "Quentin";
 }
 

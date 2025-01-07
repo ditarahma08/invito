@@ -40,10 +40,10 @@
   @apply flex flex-col items-center justify-center;
 
   background-image: url("/src/assets/images/img_gallery_2.png");
-  animation: background-scroll 6s linear infinite;
+  /* animation: background-scroll 6s linear infinite; */
 
   @media (max-width: 375px) {
-    animation: background-scroll-mobile 6s linear infinite;
+    /* animation: background-scroll-mobile 6s linear infinite; */
   }
 }
 

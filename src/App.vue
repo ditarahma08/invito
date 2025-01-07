@@ -7,6 +7,7 @@ import CoverView from "./views/CoverView.vue";
 import IntroView from "./views/IntroView.vue";
 import ProfileView from "./ProfileDetailView.vue";
 import CommentView from "./views/CommentView.vue";
+import GalleryView from "./views/GalleryView.vue";
 import GiftView from "./views/GiftView.vue";
 import FooterView from "./views/FooterView.vue";
 </script>
@@ -14,9 +15,10 @@ import FooterView from "./views/FooterView.vue";
 <template>
   <div class="invitation">
     <CoverView />
-    <IntroView />
+    <!-- <IntroView /> -->
     <ProfileView />
     <EventView />
+    <GalleryView />
     <CommentView />
     <GiftView />
     <FooterView />

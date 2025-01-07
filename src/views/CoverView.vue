@@ -6,7 +6,7 @@ import Cover from "@/components/intro/Cover.vue";
   <div class="first">
     <div class="hero">
       <div class="header">
-        <h1 class="header__title">Dita & Danan</h1>
+        <h1 class="header__title">You're invited!</h1>
       </div>
 
       <div class="hero__section">

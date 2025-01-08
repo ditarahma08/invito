@@ -30,7 +30,6 @@ export default {
           query(collection(db, "comments"), orderBy("timestamp", "desc"))
         );
         this.wishesList = querySnapshot.docs.map((doc) => doc.data());
-        console.log("Fetched list:", this.wishesList);
       } catch (e) {
         console.error("Error fetching comments: ", e);
       }
@@ -70,7 +69,12 @@ export default {
     <!-- start greetings -->
 
     <div class="mb-8">
-      <h2 class="text-red-800 text-3xl md:text-5xl text-center" style="font-family: 'Quentin'">Leave us some wishes!</h2>
+      <h2
+        class="text-red-800 text-3xl md:text-5xl text-center font-bold"
+        style="font-family: &quot;Quentin&quot;"
+      >
+        Leave us some wishes!
+      </h2>
     </div>
 
     <div class="flex flex-col">
@@ -142,15 +146,15 @@ export default {
               v-for="(wish, index) in wishesList"
               :key="index"
             >
-            <div class="flex flex-col justify-between h-full">
-              <p class="text-gray-700 mb-4">{{ wish.wishes }}</p>
-              <div class="flex items-center">
-                <div>
-                  <p class="text-red-800 font-bold">{{ wish.name }}</p>
-                  <p class="text-gray-600">{{ wish.company }}</p>
+              <div class="flex flex-col justify-between h-full">
+                <p class="text-gray-700 mb-4">{{ wish.wishes }}</p>
+                <div class="flex items-center">
+                  <div>
+                    <p class="text-red-800 font-bold">{{ wish.name }}</p>
+                    <p class="text-gray-600">{{ wish.company }}</p>
+                  </div>
                 </div>
               </div>
-            </div>
             </div>
           </div>
         </div>

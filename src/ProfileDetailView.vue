@@ -44,6 +44,7 @@
 
   h2 {
     @apply text-red-800 text-3xl md:text-5xl text-center;
+    @apply font-bold;
 
     font-family: "Quentin";
   }

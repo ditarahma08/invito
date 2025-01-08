@@ -5,7 +5,7 @@
     <div class="gift__address">
       <span>BCA 0374202941 a/n Dita Rahma Puspitasari</span>
       <span>
-        Komplek Garuda, Jl. Suling Blok J/5, Cipondoh, Tangerang, Banten, 15148
+        If you want to send us gifts, please contact us for the mailing address
       </span>
     </div>
   </div>
@@ -18,6 +18,7 @@
 
   h2 {
     @apply text-red-800 text-3xl md:text-5xl text-center;
+    @apply font-bold;
 
     font-family: "Quentin";
   }

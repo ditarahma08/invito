@@ -4,6 +4,7 @@
 
     <div class="gift__address">
       <span>BCA 0374202941 a/n Dita Rahma Puspitasari</span>
+      <span>BNI 0338511489 a/n Putra Danan Joyo</span>
       <span>
         If you want to send us gifts, please contact us for the mailing address
       </span>

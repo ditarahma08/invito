@@ -3,11 +3,15 @@
     <h2>We're happy to receive your gift</h2>
 
     <div class="gift__address">
-      <span>BCA 0374202941 a/n Dita Rahma Puspitasari</span>
-      <span>BNI 0338511489 a/n Putra Danan Joyo</span>
-      <span>
-        If you want to send us gifts, please contact us for the mailing address
-      </span>
+      <div>
+        <span>BCA - 0374202941</span> a/n <span>Dita Rahma Puspitasari</span>
+      </div>
+      <div>
+        <span>BNI - 0338511489</span> a/n <span>Putra Danan Joyo</span>
+      </div>
+      <div class="gift__notes">
+        *If you want to send us gifts, please contact us for the mailing address
+      </div>
     </div>
   </div>
 </template>
@@ -27,5 +31,13 @@
 
 .gift__address {
   @apply flex flex-col gap-3 text-center m-10;
+
+  span {
+    @apply font-bold text-sm;
+  }
+}
+
+.gift__notes {
+  @apply text-xs text-red-800 font-bold mt-6;
 }
 </style>

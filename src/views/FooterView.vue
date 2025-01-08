@@ -1,6 +1,6 @@
     <template>
         <footer class="bg-gray-800 text-white py-4 text-center">
-            <p>Build with love by Dita & Danan</p>
+            <p>Built with love by Dita & Danan</p>
         </footer>
     </template>
 

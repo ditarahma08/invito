@@ -66,7 +66,7 @@
 
   &.--bride,
   &.--groom {
-    @apply text-2xl md:text-3xl;
+    @apply text-2xl md:text-5xl;
 
     font-family: "Quentin";
   }
